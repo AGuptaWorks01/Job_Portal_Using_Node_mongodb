@@ -143,7 +143,6 @@ Authorization: Bearer <JWT_TOKEN>
 
 
 ---
-
 ## Docker
 
 Here is the complete and correct sequence of Docker commands to build and run your application:
@@ -152,7 +151,6 @@ Step 1: Build the Docker Image
 Navigate to the directory where your Dockerfile is located, then run the following command to build the Docker image:
 
 bash
-Copy code
 docker build -t job-portal .
 This command will build the Docker image and tag it as job-portal.
 
@@ -160,7 +158,6 @@ Step 2: Run the Docker Container
 Once the image is built, you can run the container with the following command:
 
 bash
-Copy code
 docker run -p 8000:8000 --env-file .env job-portal
 This command does the following:
 
@@ -171,6 +168,5 @@ If Port 8000 is Already in Use
 If you face the issue where port 8000 is already in use, you can choose a different host port (like 8080):
 
 bash
-Copy code
 docker run -p 8080:8000 --env-file .env job-portal
 This will map port 8000 inside the container to port 8080 on your host machine. You can then access your application via http://localhost:8080.
