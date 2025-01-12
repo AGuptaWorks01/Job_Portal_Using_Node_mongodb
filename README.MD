@@ -142,9 +142,13 @@ Authorization: Bearer <JWT_TOKEN>
 }
 
 
+<<<<<<< HEAD
 
 
 
+=======
+---
+>>>>>>> fa62ca8ba387310908c527399f1755bb24c0b47a
 ## Docker
 
 Here is the complete and correct sequence of Docker commands to build and run your application:
